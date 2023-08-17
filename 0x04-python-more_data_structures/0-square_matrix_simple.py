@@ -1,8 +1,7 @@
 #!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    """computes the square value of all integers of a matrix."""
+    if not matrix:
+        return None
 
-def square_matrix_simple(matrix):
-    squared_matrix = []
-    for row in matrix:
-        squared_row = [num **2 for num in row]
-        squared_matrix.append(squared_row)
-    return squared_matrix
+    return list(list(map(lambda a: a*a, num_list)) for num_list in matrix)
